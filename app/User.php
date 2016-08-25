@@ -26,4 +26,8 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function coordinates() {
+        return $this->hasOne(Models\Coordinates::class);
+    }
 }
