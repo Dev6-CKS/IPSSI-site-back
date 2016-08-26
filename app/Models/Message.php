@@ -4,9 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Applications extends Model
+class Message extends Model
 {
-    protected $fillable = ['cv_id', 'offer_id'];
+    protected $fillable = ['titre', 'content', 'sender_id'];
 
     public $timestamps = true;
 }

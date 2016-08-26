@@ -4,9 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Cvs extends Model
+class Application extends Model
 {
-    protected $fillable = ['content'];
+    protected $fillable = ['cv_id', 'offer_id'];
 
     public $timestamps = true;
 }

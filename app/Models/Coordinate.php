@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Coordinates extends Model
+class Coordinate extends Model
 {
     protected $fillable = ['address', 'country', 'phone', 'postal_code'];
 

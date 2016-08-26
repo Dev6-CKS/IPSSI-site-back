@@ -31,6 +31,9 @@ class DeleteTables extends Migration
         Schema::drop('profiles');
         Schema::drop('offers');
         Schema::drop('applications');
+        Schema::drop('experiences');
+        Schema::drop('educations');
+        Schema::drop('skills');
         Schema::drop('cvs');
         Schema::drop('password_resets');
         Schema::drop('user_profiles');

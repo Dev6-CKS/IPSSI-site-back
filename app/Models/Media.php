@@ -4,9 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Messages extends Model
+class Media extends Model
 {
-    protected $fillable = ['titre', 'content', 'sender_id'];
+    protected $fillable = ['path', 'title', 'ext'];
 
     public $timestamps = true;
 }

@@ -4,9 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Profiles extends Model
+class UserProfile extends Model
 {
-    protected $fillable = ['type', 'permission'];
+    protected $fillable = ['user_id', 'profile_id'];
 
     public $timestamps = false;
 }

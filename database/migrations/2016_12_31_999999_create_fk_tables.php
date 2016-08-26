@@ -56,6 +56,18 @@ class CreateFkTables extends Migration
             $table->foreign('profile_id')->references('id')->on('profiles');
         });
 
+        Schema::table('experiences', function (Blueprint $table) {
+            $table->foreign('cv_id')->references('id')->on('cvs');
+        });
+
+        Schema::table('educations', function (Blueprint $table) {
+            $table->foreign('cv_id')->references('id')->on('cvs');
+        });
+
+        Schema::table('skills', function (Blueprint $table) {
+            $table->foreign('cv_id')->references('id')->on('cvs');
+        });
+
     }
 
     /**

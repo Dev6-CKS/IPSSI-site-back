@@ -4,9 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class UserProfiles extends Model
+class PasswordReset extends Model
 {
-    protected $fillable = ['user_id', 'profile_id'];
+    protected $fillable = ['email', 'token', 'created_at'];
 
     public $timestamps = false;
 }

@@ -1,9 +1,10 @@
 <?php
 
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCvsTable extends Migration
+class CreateSkillsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,9 +13,10 @@ class CreateCvsTable extends Migration
      */
     public function up()
     {
-        Schema::create('cvs', function (Blueprint $table) {
+        Schema::create('skills', function (Blueprint $table) {
             $table->increments('id');
-            $table->text('cvTitle');
+            $table->string('content');
+            $table->integer('cv_id')->unsigned();
             $table->dateTime('created_at');
             $table->dateTime('updated_at');
         });

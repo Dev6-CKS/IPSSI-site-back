@@ -4,9 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Medias extends Model
+class Cra extends Model
 {
-    protected $fillable = ['path', 'title', 'ext'];
+    protected $fillable = ['content', 'user_id'];
 
     public $timestamps = true;
 }

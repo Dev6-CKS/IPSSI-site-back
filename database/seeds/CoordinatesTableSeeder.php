@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Models\Coordinates;
+use App\Models\Coordinate;
 
 class CoordinatesTableSeeder extends Seeder
 {
@@ -16,7 +16,7 @@ class CoordinatesTableSeeder extends Seeder
 
         foreach(range(1, 10) as $index)
         {
-            Coordinates::create([
+            Coordinate::create([
                 'address' => $faker->streetAddress,
                 'country' => 'France',
                 'phone' => $faker->phoneNumber,
